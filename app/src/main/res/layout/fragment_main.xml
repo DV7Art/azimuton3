@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/recyclerViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Играть"/>
+
+    <Button
+        android:id="@+id/btnPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewHistory"
+        android:layout_marginTop="16dp"
+        android:text="Политика"/>
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPolicy"
+        android:layout_marginTop="16dp"
+        android:text="История"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHistory"
+        android:layout_marginTop="16dp"
+        android:text="Выход"/>
+
+    <ImageView
+        android:id="@+id/grayCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gray_ring"
+        android:visibility="invisible" />
+
+</RelativeLayout>

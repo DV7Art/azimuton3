@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Добавь элементы для игрового экрана, например, вращающийся белый шар и блоки -->
+    <ImageView
+        android:id="@+id/grayCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gray_ring" />
+
+    <ImageView
+        android:id="@+id/whiteBall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_ball" />
+
+    <LinearLayout
+        android:id="@+id/darkBlocksContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- В этом контейнере будут темные блоки -->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Score: 0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fpsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:text="FPS: 0"
+        android:textSize="18sp" />
+</RelativeLayout>
